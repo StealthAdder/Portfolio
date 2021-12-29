@@ -1,4 +1,4 @@
-import icon from '../images/icon-circle.png';
+import icon from '../static/images/icon-circle.png';
 import { TextGlitch } from './TextGlitch';
 import Button from '@mui/material/Button';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
@@ -10,13 +10,13 @@ const Home = () => {
         <div className='logo-title'>
           <img src={icon} alt='' />
           <h1 className='dog-Tag'>
-            <TextGlitch text={'Noah'} cycletime={2500} />
+            <TextGlitch text={'Noah'} cycletime={2500} interval={15} />
           </h1>
           <p className='id-hash'>
-            <TextGlitch text={'#'} cycletime={2500} />
+            <TextGlitch text={'#'} cycletime={2500} interval={15} />
           </p>
           <p className='id-hash'>
-            <TextGlitch text={'STEALTHADDER'} cycletime={2800} />
+            <TextGlitch text={'STEALTHADDER'} cycletime={2500} interval={10} />
           </p>
         </div>
       </div>
@@ -40,8 +40,8 @@ const Home = () => {
         <div className='description'>
           <p>Hey, Awesome that you found my profile!</p>
           <p>
-            22 Yrs Me! CS Engineering Graduate, Practising as Junior Dev/Intern
-            @ WorkPlay Studios
+            22 Yr Me! CS Engineering Graduate, Practising as Junior Dev/Intern @
+            WorkPlay Studios
           </p>
           <p>
             Am a JavaScript Developer by passion. Click more to see on what am
@@ -52,18 +52,15 @@ const Home = () => {
             style={{
               color: 'white',
               backgroundColor: '#00ff66b6',
-              marginTop: '3vh',
+              marginTop: '5vh',
+              marginBottom: '5vh',
             }}
             endIcon={<KeyboardDoubleArrowDownIcon />}
           >
             More
           </Button>
         </div>
-        <div className='projects'>
-          <h2 className='projectTitle'>Projects</h2>
-          <p>Under Development</p>
-          {/* <Projects /> */}
-        </div>
+        <Projects />
       </div>
     </>
   );

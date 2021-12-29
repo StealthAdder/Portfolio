@@ -1,23 +1,21 @@
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import CardComp from './CardComp';
-import { makeStyles } from '@mui/material/styles';
+import styles from '../styles/card.module.css';
+import { data } from '../constant/data';
+import Container from './Container';
 const Projects = () => {
-  const useStyles = makeStyles({
-    gridContainer: {
-      paddingLeft: '40px',
-      paddingRight: '40px',
-    },
-  });
   return (
-    <Grid Container>
-      <Grid item xs={6}>
-        <CardComp />
-      </Grid>
-      <Grid item xs={6}>
-        <CardComp />
-      </Grid>
-    </Grid>
+    <>
+      <h4 className={styles.pageTitle}>Projects</h4>
+      <div className={styles.wrapperGrid}>
+        {data.map((game) => (
+          <Container
+            image={game.image}
+            title={game.title}
+            url={game.url}
+            desc={game.desc}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 

@@ -16,28 +16,30 @@ body {
   color: aliceblue;
   background-color: #0c2e1b;
 }
-
+.header {
+  margin-top: 4vh;
+}
 .logo-title {
   font-family: 'Josefin Sans';
   display: flex;
   height: auto;
   align-items: center;
-  margin-top: 4vh;
 }
 
 img {
-  width: 50px;
+  width: 55px;
   height: auto;
 }
 
 .dog-Tag {
   margin: 0px 5px;
+  font-size: 34px;
 }
 
 .id-hash {
   margin: 0px 5px 0px 0px;
   font-family: 'Libre Barcode 39 Text';
-  font-size: 32px;
+  font-size: 34px;
 }
 
 .main {
@@ -72,7 +74,6 @@ img {
   font-family: 'Josefin Sans';
   text-align: left;
   margin-left: 5vh;
-  margin-bottom: 5vh;
 }
 
 .description p {
@@ -93,12 +94,14 @@ img {
 }
 
 .projects {
-  margin-top: 8vh;
+  margin-top: 5vh;
   width: 100vh;
   height: 100vh;
+  display: flex;
 }
 
 .projectTitle {
-  font-size: 40px;
+  font-size: 32px;
+  margin-bottom: 2vh;
   text-align: left;
 }
