@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  color: aliceblue;
+  background-color: #0c2e1b;
+}
+
+.logo-title {
+  font-family: 'Josefin Sans';
+  display: flex;
+  height: auto;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
+
+.dog-Tag {
+  margin: 0px 5px;
+}
+
+.id-hash {
+  margin: 0px 5px 0px 0px;
+  font-family: 'Libre Barcode 39 Text';
+  font-size: 32px;
+}
+
+.main {
+  display: block;
+  margin-top: 18vh;
+  align-items: center;
+  text-align: center;
+}
+
+.main h1 {
+  font-size: 50px;
+  margin: 10px 5px;
+}
+
+.main p {
+  font-size: 25px;
+}
+
+.icons {
+  font-size: 60px;
+  margin: 10vh 18vh;
+  display: flex;
+  color: #00ff66b6;
+}
+
+.icons i {
+  flex: 1;
+}
+
+.description {
+  margin-top: 15vh;
+  font-family: 'Josefin Sans';
+  text-align: left;
+  margin-left: 5vh;
+  margin-bottom: 5vh;
+}
+
+.description p {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.livestatus {
+  margin-top: 2vh;
+  font-family: 'Josefin Sans';
+  text-align: left;
+  display: flex;
+}
+
+.btn-more {
+  color: 'red';
+  background-color: green;
+}
+
+.projects {
+  margin-top: 8vh;
+  width: 100vh;
+  height: 100vh;
+}
+
+.projectTitle {
+  font-size: 40px;
+  text-align: left;
+}
