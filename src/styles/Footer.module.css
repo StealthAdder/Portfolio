@@ -1,0 +1,50 @@
+.footer {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.logoTitle {
+  font-family: 'Josefin Sans';
+  display: flex;
+  height: 8vh;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.dogTag {
+  margin: 6px 5px 0px 5px;
+  font-size: 30px;
+  margin-top: 2vh;
+}
+
+.idHash {
+  margin: 6px 5px 0px 0px;
+  font-family: 'Libre Barcode 39 Text';
+  font-size: 28px;
+  margin-top: 2vh;
+}
+.imgFooter {
+  width: 40px;
+  height: auto;
+}
+
+.footerBlk {
+  margin-left: 8vh;
+  height: 24vh;
+  /* border-style: dotted dashed solid double; */
+  /* align-items: center; */
+  text-align: left;
+}
+.footerDesc {
+  font-size: 28px;
+  text-align: left;
+  height: 3vh;
+  font-family: 'Libre Barcode 39 Text';
+  margin-top: -1vh;
+  margin-bottom: 1vh;
+}
+
+.contacts {
+  display: flex;
+  /* margin: 3vh 0 5vh 0; */
+}

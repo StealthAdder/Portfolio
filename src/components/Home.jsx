@@ -1,14 +1,24 @@
-import icon from '../static/images/icon-circle.png';
 import { TextGlitch } from './TextGlitch';
 import Button from '@mui/material/Button';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import Projects from './Projects';
+import Footer from './Footer';
+import { useRef } from 'react';
 const Home = () => {
+  const scrollToRef = (ref) => {
+    window.scrollTo(0, ref.current.offsetTop, { behavior: 'smooth' });
+  };
+  // General scroll to element function
+  const myRef = useRef(null);
+  const executeScroll = () => scrollToRef(myRef);
   return (
     <>
       <div className='header'>
         <div className='logo-title'>
-          <img src={icon} alt='' />
+          <img
+            src='https://stealthadder.github.io/Portfolio/assets/icon-circle.png'
+            alt='ICON'
+          />
           <h1 className='dog-Tag'>
             <TextGlitch text={'Noah'} cycletime={2500} interval={15} />
           </h1>
@@ -23,7 +33,7 @@ const Home = () => {
       <div className='main'>
         <div className='hero-title'>
           <h1>Hariharan Parthiban</h1>
-          <p>
+          <p className='workDesc'>
             <TextGlitch text={'Developer & Player'} cycletime={3000} />
           </p>
         </div>
@@ -38,14 +48,25 @@ const Home = () => {
           <i class='fab fa-github'></i>
         </div>
         <div className='description'>
-          <p>Hey, Awesome that you found my profile!</p>
+          <p style={{ fontSize: '24px' }}>nuqneH?👋 {'W_W, '}</p>
           <p>
             22 Yr Me! CS Engineering Graduate, Practising as Junior Dev/Intern @
-            WorkPlay Studios
+            WorkPlay Studios.
           </p>
           <p>
-            Am a JavaScript Developer by passion. Click more to see on what am
+            Am a JavaScript Developer by choice!. Click more to see on what am
             currently working on!
+          </p>
+          <p style={{ fontStyle: 'italic', margin: '10px 0px' }}>
+            "You can always edit a bad page. You can’t edit a blank page."
+          </p>
+          <p>
+            {"tlho' - "}
+            <TextGlitch
+              text={`It's Klingon for Thanx!`}
+              style={{ display: 'inline-block' }}
+              cycletime={3500}
+            />
           </p>
           <Button
             variant='contained'
@@ -55,12 +76,16 @@ const Home = () => {
               marginTop: '5vh',
               marginBottom: '5vh',
             }}
+            onClick={executeScroll}
             endIcon={<KeyboardDoubleArrowDownIcon />}
           >
             More
           </Button>
         </div>
-        <Projects />
+        <div ref={myRef}>
+          <Projects />
+        </div>
+        <Footer />
       </div>
     </>
   );
