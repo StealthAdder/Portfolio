@@ -58,7 +58,7 @@ const Home = () => {
             currently working on!
           </p>
           <p>
-            I play games, watch anime casually and am sucker for Formulae One
+            I play games, watch anime casually and am sucker for Formula One
             (F1),
           </p>
           <p>
