@@ -1,6 +1,6 @@
-import styles from '../styles/Footer.module.css';
-import { TextGlitch } from './TextGlitch';
-import Chip from './Chip';
+import styles from '../styles/Footer.module.css'
+import { TextGlitch } from './TextGlitch'
+import Chip from './Chip'
 const Footer = () => {
   return (
     <div className={styles.footer}>
@@ -22,7 +22,11 @@ const Footer = () => {
       </div>
       <div className={styles.footerBlk}>
         <p className={styles.footerDesc}>
-          <TextGlitch text={'MERN Stack Dev'} cycletime={2500} interval={10} />
+          <TextGlitch
+            text={'BACKEND ENGINEER'}
+            cycletime={2500}
+            interval={10}
+          />
         </p>
         <div className={styles.contacts}>
           <Chip
@@ -31,14 +35,29 @@ const Footer = () => {
             icon={<i class='fab fa-github'></i>}
           />
           <Chip
-            link='https://stackoverflow.com/users/12732818/hariharan-parthiban?tab=profile'
-            label='StackOverflow'
-            icon={<i class='fab fa-stack-overflow'></i>}
-          />
-          <Chip
             link='https://discord.com/channels/@me/311065733641797633'
             label='Discord'
             icon={<i class='fab fa-discord'></i>}
+          />
+          <Chip
+            link='https://www.youtube.com/channel/UCOlgaUzjxJc8CRJtzB-UnyQ'
+            label='Youtube'
+            icon={<i class='fab fa-youtube'></i>}
+          />
+          <Chip
+            link='https://steamcommunity.com/id/zeonoah/'
+            label='Steam'
+            icon={<i class='fab fa-steam'></i>}
+          />
+          <Chip
+            link='https://www.twitch.tv/zeo_noah'
+            label='Twitch'
+            icon={<i class='fab fa-twitch'></i>}
+          />
+          <Chip
+            link='https://open.spotify.com/user/crbukrdk5iym9rkd1lk2hr22h'
+            label='Spotify'
+            icon={<i class='fab fa-spotify'></i>}
           />
           <Chip
             link='mailto:hariharanp2435@gmail.com'
@@ -46,25 +65,14 @@ const Footer = () => {
             icon={<i class='fas fa-envelope'></i>}
           />
           <Chip
+            link='https://stackoverflow.com/users/12732818/hariharan-parthiban?tab=profile'
+            label='StackOverflow'
+            icon={<i class='fab fa-stack-overflow'></i>}
+          />
+          <Chip
             link='https://twitter.com/StealthAdder'
             label='Twitter'
             icon={<i class='fab fa-twitter'></i>}
-          />
-          <Chip
-            link='https://steamcommunity.com/profiles/76561198274358507'
-            label='Steam'
-            icon={<i class='fab fa-steam'></i>}
-          />
-
-          <Chip
-            link='https://open.spotify.com/user/crbukrdk5iym9rkd1lk2hr22h'
-            label='Spotify'
-            icon={<i class='fab fa-spotify'></i>}
-          />
-          <Chip
-            link='https://www.twitch.tv/zeo_noah'
-            label='Twitch'
-            icon={<i class='fab fa-twitch'></i>}
           />
         </div>
         <p
@@ -82,7 +90,7 @@ const Footer = () => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

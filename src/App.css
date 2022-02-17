@@ -46,7 +46,7 @@ img {
 
 .main {
   display: block;
-  margin-top: 12vh;
+  margin-top: 10vh;
   align-items: center;
   text-align: center;
 }
@@ -62,7 +62,7 @@ img {
 
 .icons {
   font-size: 60px;
-  margin: 10vh 18vh;
+  margin: 7vh 18vh;
   display: flex;
   color: #00ff66b6;
 }
